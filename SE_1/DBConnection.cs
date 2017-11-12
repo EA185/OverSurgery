@@ -85,14 +85,16 @@ namespace SE_1
 
         public void Insert(Variables Var)
         {
-            OpenConnection();
-            SqlCommand cmd = connectionToDB.CreateCommand();
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\EA\Source\Repos\OverSurgery\SE_1\Creds.mdf;Integrated Security=True;Connect Timeout=30");
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into patient values('" + Var.FirstName + "','" + Var.LastName + "','" + Var.Address1 + "','" + Var.Address2 + "','" + Var.PhoneNumber + "')";
+            cmd.CommandText = "INSERT INTO patient VALUES ('" + Var.FirstName + "','" + Var.LastName + "','" + Var.Address1 + "','" + Var.Address2 + "','" + Var.PhoneNumber + "')";
             cmd.ExecuteNonQuery();
-            CloseConnection();
+            con.Close();
 
-            MessageBox.Show("Record Successfully Inserted");
+            MessageBox.Show("done");
         }
+
     }
 }

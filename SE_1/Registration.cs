@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SE_1
 {
     public partial class Registration : Form 
     {
+        
         public Variables variables = new Variables();
         
         public Registration()
