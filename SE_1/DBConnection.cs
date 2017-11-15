@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
 
+
 namespace SE_1
 {
     class DBConnection
@@ -19,7 +20,7 @@ namespace SE_1
 
         private SqlDataAdapter dataAdapter;
 
-        
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\EA\Source\Repos\OverSurgery\SE_1\Creds.mdf;Integrated Security=True;Connect Timeout=30");
 
         public static string ConnectionStr
         {
@@ -82,10 +83,10 @@ namespace SE_1
 
             return x;
         }
+        
 
         public void Insert(Variables Var)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\EA\Source\Repos\OverSurgery\SE_1\Creds.mdf;Integrated Security=True;Connect Timeout=30");
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
@@ -95,6 +96,5 @@ namespace SE_1
 
             MessageBox.Show("done");
         }
-
     }
 }

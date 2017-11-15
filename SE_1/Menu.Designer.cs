@@ -34,6 +34,7 @@
             this.btnBook = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.btn_exitM = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRegister
@@ -63,6 +64,7 @@
             this.btnFind.TabIndex = 2;
             this.btnFind.Text = "Find A Patient";
             this.btnFind.UseVisualStyleBackColor = true;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // btnBook
             // 
@@ -75,11 +77,11 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(358, 469);
+            this.button5.Location = new System.Drawing.Point(358, 458);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(255, 111);
             this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
+            this.button5.Text = "Print Prescriptiom";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
@@ -88,14 +90,25 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(255, 111);
             this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
+            this.button6.Text = "Print Result";
             this.button6.UseVisualStyleBackColor = true;
+            // 
+            // btn_exitM
+            // 
+            this.btn_exitM.Location = new System.Drawing.Point(38, 595);
+            this.btn_exitM.Name = "btn_exitM";
+            this.btn_exitM.Size = new System.Drawing.Size(145, 53);
+            this.btn_exitM.TabIndex = 7;
+            this.btn_exitM.Text = "Exit";
+            this.btn_exitM.UseVisualStyleBackColor = true;
+            this.btn_exitM.Click += new System.EventHandler(this.btn_exitM_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1314, 702);
+            this.Controls.Add(this.btn_exitM);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btnBook);
@@ -116,5 +129,6 @@
         private System.Windows.Forms.Button btnBook;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btn_exitM;
     }
 }

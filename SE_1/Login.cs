@@ -28,15 +28,20 @@ namespace SE_1
 
             if (DBConnection.CheckLogin(variables) == true)
             {
-                MessageBox.Show("Login Successful!", "Login Successful!");
+                MessageBox.Show("Login Successful!", "Welcome");
                 this.Hide();
                 Menu page = new Menu();
                 page.ShowDialog();
             }
             else
             {
-                MessageBox.Show("Fail");
+                MessageBox.Show("Wrong username or password!");
             }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

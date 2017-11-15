@@ -23,5 +23,17 @@ namespace SE_1
             Registration page = new Registration();
             page.ShowDialog();
         }
+
+        private void btn_exitM_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnFind_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FindPatient page = new FindPatient();
+            page.ShowDialog();
+        }
     }
 }
