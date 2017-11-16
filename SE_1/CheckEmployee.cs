@@ -26,7 +26,7 @@ namespace SE_1
             DataTable dataTable = dsCheckNurAv.Tables[0];
 
             dgv_GPav.DataSource = dataTable;
-
+             
         }
 
         private void btn_CheckGPav_Click(object sender, EventArgs e)
