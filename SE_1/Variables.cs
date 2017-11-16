@@ -22,6 +22,8 @@ namespace SE_1
         public string Address1 { get; set; }
         public string Address2 { get; set; }
         public string PhoneNumber { get; set; }
+        public string gender { get; set; }
+        public DateTime dob { get; set; }
 
         //Find A Patient Variables
         // public string PatientID { get; set; }
@@ -29,7 +31,5 @@ namespace SE_1
         public string PatientFirstNameSearch { get; set; }
         public string PatientAddress { get; set; }
         
-
-
     }
 }

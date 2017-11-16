@@ -35,5 +35,12 @@ namespace SE_1
             FindPatient page = new FindPatient();
             page.ShowDialog();
         }
+
+        private void btnCheck_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CheckEmployee page = new CheckEmployee();
+            page.ShowDialog();
+        }
     }
 }

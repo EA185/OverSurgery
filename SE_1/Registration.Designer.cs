@@ -46,6 +46,7 @@
             this.btn_Reg = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.Button();
+            this.dtp = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -195,6 +196,7 @@
             this.btn_exit.TabIndex = 16;
             this.btn_exit.Text = "Exit";
             this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // btn_back
             // 
@@ -205,11 +207,19 @@
             this.btn_back.Text = "Back";
             this.btn_back.UseVisualStyleBackColor = true;
             // 
+            // dtp
+            // 
+            this.dtp.Location = new System.Drawing.Point(259, 454);
+            this.dtp.Name = "dtp";
+            this.dtp.Size = new System.Drawing.Size(426, 31);
+            this.dtp.TabIndex = 18;
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1314, 702);
+            this.ClientSize = new System.Drawing.Size(1367, 702);
+            this.Controls.Add(this.dtp);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_Reg);
@@ -255,5 +265,6 @@
         private System.Windows.Forms.Button btn_Reg;
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.DateTimePicker dtp;
     }
 }

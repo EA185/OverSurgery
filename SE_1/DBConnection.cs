@@ -68,7 +68,7 @@ namespace SE_1
         public static bool CheckLogin(Variables Var)
         {
             DataSet dsLogin = GetDBConnectionInstance().GetDataSet("SELECT Count (*) From login WHERE username='" + Var.Username + "' and password='" + Var.Password + "'");
-
+            
             DataTable dtLogin = dsLogin.Tables[0];
 
             bool x = false;
@@ -90,7 +90,7 @@ namespace SE_1
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "INSERT INTO patient VALUES ('" + Var.FirstName + "','" + Var.LastName + "','" + Var.Address1 + "','" + Var.Address2 + "','" + Var.PhoneNumber + "')";
+            cmd.CommandText = "INSERT INTO patient VALUES ('" + Var.FirstName + "','" + Var.LastName + "','" + Var.Address1 + "','" + Var.Address2 + "','" + Var.PhoneNumber + "','" + Var.gender + "','" + Var.dob + "')";
             cmd.ExecuteNonQuery();
             con.Close();
 

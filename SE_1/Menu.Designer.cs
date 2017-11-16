@@ -55,6 +55,7 @@
             this.btnCheck.TabIndex = 1;
             this.btnCheck.Text = "Check Employee Availability";
             this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // btnFind
             // 
@@ -107,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1314, 702);
+            this.ClientSize = new System.Drawing.Size(1367, 702);
             this.Controls.Add(this.btn_exitM);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);

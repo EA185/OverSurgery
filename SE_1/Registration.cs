@@ -15,7 +15,7 @@ namespace SE_1
     {
         
         public Variables variables = new Variables();
-        
+        public string gender;
         public Registration()
         {
             InitializeComponent();
@@ -23,15 +23,31 @@ namespace SE_1
 
         private void btn_Reg_Click(object sender, EventArgs e)
         {
+            variables.dob = dtp.Value;
             variables.FirstName = txt_fstName.Text;
             variables.LastName = txt_lstName.Text;
             variables.Address1 = txt_add1.Text;
             variables.Address2 = txt_add2.Text;
             variables.PhoneNumber = txt_PhNum.Text;
+            
+            if(Box_Male.Checked == true)
+            {
+                gender = "Male";
+            }
+            if (Box_Female.Checked == true)
+            {
+                gender = "Female";
+            }
 
-            DBConnection db = new DBConnection();
+            variables.gender = gender;
 
-            db.Insert(variables);
+            DBConnection.GetDBConnectionInstance().Insert(variables);
+            
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

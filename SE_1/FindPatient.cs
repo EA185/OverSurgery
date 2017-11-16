@@ -13,7 +13,7 @@ namespace SE_1
 {
     public partial class FindPatient : Form
     {
-        Variables variables = new Variables();
+        
 
         public FindPatient()
         {
@@ -22,9 +22,9 @@ namespace SE_1
 
         private void btn_Find_Click(object sender, EventArgs e)
         {
-            DataSet dsLogin = DBConnection.GetDBConnectionInstance().GetDataSet("SELECT * FROM patient WHERE First_Name='" + txt_PaFstNameS.Text + "'");
+            DataSet dsFind = DBConnection.GetDBConnectionInstance().GetDataSet("SELECT * FROM patient WHERE Patient_ID='" + txt_PatIDS.Text + "' OR First_Name='" + txt_PaFstNameS.Text + "' and dob='" + txt_DOBS.Text + "' OR First_Name='" + txt_PaFstNameS.Text + "' and Address_1='" + txt_AddS.Text + "'");
 
-            DataTable dataTable = dsLogin.Tables[0];
+            DataTable dataTable = dsFind.Tables[0];
 
             dataGridView1.DataSource = dataTable;
 
