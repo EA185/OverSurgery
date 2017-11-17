@@ -40,7 +40,7 @@
             // btnRegister
             // 
             this.btnRegister.Location = new System.Drawing.Point(141, 125);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(170, 67);
             this.btnRegister.TabIndex = 0;
@@ -51,7 +51,7 @@
             // btnCheck
             // 
             this.btnCheck.Location = new System.Drawing.Point(366, 125);
-            this.btnCheck.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCheck.Margin = new System.Windows.Forms.Padding(2);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(170, 67);
             this.btnCheck.TabIndex = 1;
@@ -62,7 +62,7 @@
             // btnFind
             // 
             this.btnFind.Location = new System.Drawing.Point(141, 225);
-            this.btnFind.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnFind.Margin = new System.Windows.Forms.Padding(2);
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(170, 67);
             this.btnFind.TabIndex = 2;
@@ -73,32 +73,35 @@
             // btnBook
             // 
             this.btnBook.Location = new System.Drawing.Point(588, 125);
-            this.btnBook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBook.Margin = new System.Windows.Forms.Padding(2);
             this.btnBook.Name = "btnBook";
             this.btnBook.Size = new System.Drawing.Size(170, 67);
             this.btnBook.TabIndex = 3;
             this.btnBook.Text = "Book An Appointment";
             this.btnBook.UseVisualStyleBackColor = true;
+            this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
             // 
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(366, 225);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(170, 67);
             this.button5.TabIndex = 4;
             this.button5.Text = "Print Prescriptiom";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(588, 225);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(170, 67);
             this.button6.TabIndex = 5;
             this.button6.Text = "Print Result";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // btn_exit
             // 
@@ -123,7 +126,7 @@
             this.Controls.Add(this.btnFind);
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.btnRegister);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Menu";
             this.Text = "Menu";
             this.ResumeLayout(false);

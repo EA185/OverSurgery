@@ -47,5 +47,26 @@ namespace SE_1
         {
             this.Close();
         }
+
+        private void btnBook_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Booking page = new Booking();
+            page.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Prescription page = new Prescription();
+            page.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Result page = new Result();
+            page.ShowDialog();
+        }
     }
 }

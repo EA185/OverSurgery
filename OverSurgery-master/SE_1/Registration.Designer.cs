@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,22 +48,10 @@
             this.dtp = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(266, 30);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(403, 42);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Register A New Patient";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(259, 134);
+            this.label2.Location = new System.Drawing.Point(247, 93);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 15);
@@ -74,7 +61,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(259, 164);
+            this.label3.Location = new System.Drawing.Point(247, 123);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 15);
@@ -84,7 +71,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(259, 194);
+            this.label4.Location = new System.Drawing.Point(247, 153);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 15);
@@ -94,7 +81,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(259, 284);
+            this.label5.Location = new System.Drawing.Point(247, 243);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(89, 15);
@@ -104,7 +91,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(259, 254);
+            this.label6.Location = new System.Drawing.Point(247, 213);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 15);
@@ -114,7 +101,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(259, 224);
+            this.label7.Location = new System.Drawing.Point(247, 183);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 15);
@@ -124,7 +111,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(259, 314);
+            this.label9.Location = new System.Drawing.Point(247, 273);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(96, 15);
@@ -133,24 +120,24 @@
             // 
             // txt_fstName
             // 
-            this.txt_fstName.Location = new System.Drawing.Point(393, 131);
-            this.txt_fstName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_fstName.Location = new System.Drawing.Point(381, 90);
+            this.txt_fstName.Margin = new System.Windows.Forms.Padding(2);
             this.txt_fstName.Name = "txt_fstName";
             this.txt_fstName.Size = new System.Drawing.Size(285, 25);
             this.txt_fstName.TabIndex = 8;
             // 
             // txt_lstName
             // 
-            this.txt_lstName.Location = new System.Drawing.Point(393, 161);
-            this.txt_lstName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_lstName.Location = new System.Drawing.Point(381, 120);
+            this.txt_lstName.Margin = new System.Windows.Forms.Padding(2);
             this.txt_lstName.Name = "txt_lstName";
             this.txt_lstName.Size = new System.Drawing.Size(285, 25);
             this.txt_lstName.TabIndex = 9;
             // 
             // txt_add1
             // 
-            this.txt_add1.Location = new System.Drawing.Point(393, 221);
-            this.txt_add1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_add1.Location = new System.Drawing.Point(381, 180);
+            this.txt_add1.Margin = new System.Windows.Forms.Padding(2);
             this.txt_add1.Name = "txt_add1";
             this.txt_add1.Size = new System.Drawing.Size(285, 25);
             this.txt_add1.TabIndex = 10;
@@ -158,16 +145,16 @@
             // 
             // txt_add2
             // 
-            this.txt_add2.Location = new System.Drawing.Point(393, 251);
-            this.txt_add2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_add2.Location = new System.Drawing.Point(381, 210);
+            this.txt_add2.Margin = new System.Windows.Forms.Padding(2);
             this.txt_add2.Name = "txt_add2";
             this.txt_add2.Size = new System.Drawing.Size(285, 25);
             this.txt_add2.TabIndex = 11;
             // 
             // txt_PhNum
             // 
-            this.txt_PhNum.Location = new System.Drawing.Point(393, 311);
-            this.txt_PhNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_PhNum.Location = new System.Drawing.Point(381, 270);
+            this.txt_PhNum.Margin = new System.Windows.Forms.Padding(2);
             this.txt_PhNum.Name = "txt_PhNum";
             this.txt_PhNum.Size = new System.Drawing.Size(285, 25);
             this.txt_PhNum.TabIndex = 12;
@@ -175,8 +162,8 @@
             // Box_Male
             // 
             this.Box_Male.AutoSize = true;
-            this.Box_Male.Location = new System.Drawing.Point(393, 193);
-            this.Box_Male.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Box_Male.Location = new System.Drawing.Point(381, 152);
+            this.Box_Male.Margin = new System.Windows.Forms.Padding(2);
             this.Box_Male.Name = "Box_Male";
             this.Box_Male.Size = new System.Drawing.Size(58, 19);
             this.Box_Male.TabIndex = 13;
@@ -186,8 +173,8 @@
             // Box_Female
             // 
             this.Box_Female.AutoSize = true;
-            this.Box_Female.Location = new System.Drawing.Point(532, 193);
-            this.Box_Female.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Box_Female.Location = new System.Drawing.Point(520, 152);
+            this.Box_Female.Margin = new System.Windows.Forms.Padding(2);
             this.Box_Female.Name = "Box_Female";
             this.Box_Female.Size = new System.Drawing.Size(70, 19);
             this.Box_Female.TabIndex = 14;
@@ -197,7 +184,7 @@
             // btn_Reg
             // 
             this.btn_Reg.Location = new System.Drawing.Point(685, 379);
-            this.btn_Reg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Reg.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Reg.Name = "btn_Reg";
             this.btn_Reg.Size = new System.Drawing.Size(101, 31);
             this.btn_Reg.TabIndex = 15;
@@ -208,7 +195,7 @@
             // btn_exit
             // 
             this.btn_exit.Location = new System.Drawing.Point(799, 379);
-            this.btn_exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_exit.Margin = new System.Windows.Forms.Padding(2);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(101, 31);
             this.btn_exit.TabIndex = 16;
@@ -219,7 +206,7 @@
             // btn_back
             // 
             this.btn_back.Location = new System.Drawing.Point(12, 379);
-            this.btn_back.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(2);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(101, 31);
             this.btn_back.TabIndex = 17;
@@ -229,8 +216,8 @@
             // 
             // dtp
             // 
-            this.dtp.Location = new System.Drawing.Point(393, 281);
-            this.dtp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtp.Location = new System.Drawing.Point(381, 240);
+            this.dtp.Margin = new System.Windows.Forms.Padding(2);
             this.dtp.Name = "dtp";
             this.dtp.Size = new System.Drawing.Size(285, 25);
             this.dtp.TabIndex = 18;
@@ -258,8 +245,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Registration";
             this.Text = "Registration";
             this.ResumeLayout(false);
@@ -268,8 +254,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

@@ -30,11 +30,11 @@ namespace SE_1
             variables.Address2 = txt_add2.Text;
             variables.PhoneNumber = txt_PhNum.Text;
             
-            if(Box_Male.Checked == true)
+            if (Box_Male.Checked == true)
             {
                 gender = "Male";
             }
-            if (Box_Female.Checked == true)
+            else
             {
                 gender = "Female";
             }

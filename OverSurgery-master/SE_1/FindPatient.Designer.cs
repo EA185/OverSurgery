@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,22 +43,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(326, 35);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(252, 42);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Find A Patient";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(53, 130);
+            this.label2.Location = new System.Drawing.Point(41, 114);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 15);
@@ -69,7 +56,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(53, 160);
+            this.label3.Location = new System.Drawing.Point(41, 144);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(117, 15);
@@ -79,7 +66,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(53, 190);
+            this.label4.Location = new System.Drawing.Point(41, 174);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 15);
@@ -89,7 +76,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(53, 220);
+            this.label5.Location = new System.Drawing.Point(41, 204);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 15);
@@ -98,40 +85,40 @@
             // 
             // txt_PatIDS
             // 
-            this.txt_PatIDS.Location = new System.Drawing.Point(202, 125);
-            this.txt_PatIDS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_PatIDS.Location = new System.Drawing.Point(190, 109);
+            this.txt_PatIDS.Margin = new System.Windows.Forms.Padding(2);
             this.txt_PatIDS.Name = "txt_PatIDS";
             this.txt_PatIDS.Size = new System.Drawing.Size(204, 25);
             this.txt_PatIDS.TabIndex = 5;
             // 
             // txt_PaFstNameS
             // 
-            this.txt_PaFstNameS.Location = new System.Drawing.Point(202, 155);
-            this.txt_PaFstNameS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_PaFstNameS.Location = new System.Drawing.Point(190, 139);
+            this.txt_PaFstNameS.Margin = new System.Windows.Forms.Padding(2);
             this.txt_PaFstNameS.Name = "txt_PaFstNameS";
             this.txt_PaFstNameS.Size = new System.Drawing.Size(204, 25);
             this.txt_PaFstNameS.TabIndex = 6;
             // 
             // txt_DOBS
             // 
-            this.txt_DOBS.Location = new System.Drawing.Point(202, 185);
-            this.txt_DOBS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_DOBS.Location = new System.Drawing.Point(190, 169);
+            this.txt_DOBS.Margin = new System.Windows.Forms.Padding(2);
             this.txt_DOBS.Name = "txt_DOBS";
             this.txt_DOBS.Size = new System.Drawing.Size(204, 25);
             this.txt_DOBS.TabIndex = 7;
             // 
             // txt_AddS
             // 
-            this.txt_AddS.Location = new System.Drawing.Point(202, 215);
-            this.txt_AddS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_AddS.Location = new System.Drawing.Point(190, 199);
+            this.txt_AddS.Margin = new System.Windows.Forms.Padding(2);
             this.txt_AddS.Name = "txt_AddS";
             this.txt_AddS.Size = new System.Drawing.Size(204, 25);
             this.txt_AddS.TabIndex = 8;
             // 
             // btn_Find
             // 
-            this.btn_Find.Location = new System.Drawing.Point(170, 267);
-            this.btn_Find.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Find.Location = new System.Drawing.Point(158, 251);
+            this.btn_Find.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Find.Name = "btn_Find";
             this.btn_Find.Size = new System.Drawing.Size(108, 33);
             this.btn_Find.TabIndex = 9;
@@ -142,8 +129,8 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(445, 94);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(433, 78);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 33;
             this.dataGridView1.Size = new System.Drawing.Size(438, 241);
@@ -189,8 +176,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FindPatient";
             this.Text = "FindPatient";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -200,8 +186,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
