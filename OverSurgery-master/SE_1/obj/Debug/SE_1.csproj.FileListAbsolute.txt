@@ -1,0 +1,15 @@
+C:\Users\Admin\Downloads\OverSurgery-master\OverSurgery-master\SE_1\bin\Debug\Creds.mdf
+C:\Users\Admin\Downloads\OverSurgery-master\OverSurgery-master\SE_1\bin\Debug\Creds_log.ldf
+C:\Users\Admin\Downloads\OverSurgery-master\OverSurgery-master\SE_1\bin\Debug\SE_1.exe.config
+C:\Users\Admin\Downloads\OverSurgery-master\OverSurgery-master\SE_1\bin\Debug\SE_1.exe
+C:\Users\Admin\Downloads\OverSurgery-master\OverSurgery-master\SE_1\bin\Debug\SE_1.pdb
+C:\Users\Admin\Downloads\OverSurgery-master\OverSurgery-master\SE_1\obj\Debug\SE_1.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Downloads\OverSurgery-master\OverSurgery-master\SE_1\obj\Debug\SE_1.CheckEmployee.resources
+C:\Users\Admin\Downloads\OverSurgery-master\OverSurgery-master\SE_1\obj\Debug\SE_1.FindPatient.resources
+C:\Users\Admin\Downloads\OverSurgery-master\OverSurgery-master\SE_1\obj\Debug\SE_1.Login.resources
+C:\Users\Admin\Downloads\OverSurgery-master\OverSurgery-master\SE_1\obj\Debug\SE_1.Menu.resources
+C:\Users\Admin\Downloads\OverSurgery-master\OverSurgery-master\SE_1\obj\Debug\SE_1.Properties.Resources.resources
+C:\Users\Admin\Downloads\OverSurgery-master\OverSurgery-master\SE_1\obj\Debug\SE_1.Registration.resources
+C:\Users\Admin\Downloads\OverSurgery-master\OverSurgery-master\SE_1\obj\Debug\SE_1.csproj.GenerateResource.Cache
+C:\Users\Admin\Downloads\OverSurgery-master\OverSurgery-master\SE_1\obj\Debug\SE_1.exe
+C:\Users\Admin\Downloads\OverSurgery-master\OverSurgery-master\SE_1\obj\Debug\SE_1.pdb
