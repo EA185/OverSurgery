@@ -30,11 +30,11 @@ namespace SE_1
             variables.Address2 = txt_add2.Text;
             variables.PhoneNumber = txt_PhNum.Text;
             
-            if(Box_Male.Checked == true)
+            if (Box_Male.Checked == true)
             {
                 gender = "Male";
             }
-            if (Box_Female.Checked == true)
+            else
             {
                 gender = "Female";
             }
@@ -48,6 +48,18 @@ namespace SE_1
         private void btn_exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txt_add1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu page = new Menu();
+            page.ShowDialog();
         }
     }
 }

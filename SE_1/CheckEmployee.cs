@@ -37,5 +37,17 @@ namespace SE_1
 
             dgv_GPav.DataSource = dataTable;
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu page = new Menu();
+            page.ShowDialog();
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
