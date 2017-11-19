@@ -52,5 +52,22 @@ namespace SE_1
 
             dgv_NURonDuty.DataSource = dataTableNur;
         }
+
+        private void dgv_NURonDuty_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu page = new Menu();
+            page.ShowDialog();
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
