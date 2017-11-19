@@ -20,7 +20,7 @@ namespace SE_1
 
         private SqlDataAdapter dataAdapter;
 
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\EA\Source\Repos\OverSurgery\SE_1\Creds.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\EA\Desktop\OverSurgery\SE_1\Creds.mdf;Integrated Security=True;Connect Timeout=30");
 
         public static string ConnectionStr
         {
@@ -83,18 +83,18 @@ namespace SE_1
 
             return x;
         }
-        
 
-        public void Insert(Variables Var)
+
+        public int Insert(Variables Var)
         {
+            int rows = -1;
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "INSERT INTO patient VALUES ('" + Var.FirstName + "','" + Var.LastName + "','" + Var.Address1 + "','" + Var.Address2 + "','" + Var.PhoneNumber + "','" + Var.gender + "','" + Var.dob + "')";
-            cmd.ExecuteNonQuery();
+            rows = cmd.ExecuteNonQuery();
             con.Close();
-
-            MessageBox.Show("done");
+            return rows;
         }
     }
 }

@@ -40,19 +40,19 @@ namespace SE_1
             }
 
             variables.gender = gender;
-
-            DBConnection.GetDBConnectionInstance().Insert(variables);
-            
+            if (DBConnection.GetDBConnectionInstance().Insert(variables) > 0)
+            {
+                MessageBox.Show("The Data Has Been Recorded Successfully!");
+            }
+            else
+            {
+                MessageBox.Show("Error!");
+            }
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void txt_add1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_back_Click(object sender, EventArgs e)
