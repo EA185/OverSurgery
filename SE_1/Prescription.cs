@@ -20,7 +20,7 @@ namespace SE_1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            {
+           /* {
                 variables.PatientID = txtPatient.Text;
                 variables.Diagnosis = txtDiagnosis.Text;
                 variables.MedicineName= txtMedName.Text;
@@ -29,7 +29,7 @@ namespace SE_1
 
                 DBConnection.GetDBConnectionInstance().InsertPrescription(variables);
 
-            }
+            }*/
 
         }
     }

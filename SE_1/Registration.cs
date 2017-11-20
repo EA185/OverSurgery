@@ -13,7 +13,7 @@ namespace SE_1
 {
     public partial class Registration : Form 
     {
-        
+        public static string insert = "INSERT INTO patient (First_Name, Last_Name, Address_1, Address_2, Phone_Number, Gender, dob) VALUES (@First_Name, @Last_Name, @Address_1, @Address_2, @Phone_Number, @Gender, @dob)";
         public Variables variables = new Variables();
         public string gender;
         public Registration()
@@ -23,6 +23,7 @@ namespace SE_1
 
         private void btn_Reg_Click(object sender, EventArgs e)
         {
+            
             variables.dob = dtp.Value;
             variables.FirstName = txt_fstName.Text;
             variables.LastName = txt_lstName.Text;
@@ -38,8 +39,8 @@ namespace SE_1
             {
                 gender = "Female";
             }
-
             variables.gender = gender;
+
             if (DBConnection.GetDBConnectionInstance().Insert(variables) > 0)
             {
                 MessageBox.Show("The Data Has Been Recorded Successfully!");

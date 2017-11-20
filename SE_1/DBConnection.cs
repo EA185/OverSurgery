@@ -87,14 +87,22 @@ namespace SE_1
 
         public int Insert(Variables Var)
         {
-            int rows = -1;
-            con.Open();
-            SqlCommand cmd = con.CreateCommand();
+            OpenConnection();
+
+            SqlCommand cmd = new SqlCommand();
+
             cmd.CommandType = CommandType.Text;
+
             cmd.CommandText = "INSERT INTO patient VALUES ('" + Var.FirstName + "','" + Var.LastName + "','" + Var.Address1 + "','" + Var.Address2 + "','" + Var.PhoneNumber + "','" + Var.gender + "','" + Var.dob + "')";
-            rows = cmd.ExecuteNonQuery();
-            con.Close();
-            return rows;
+            
+            cmd.Connection = connectionToDB;
+
+            int noRows = cmd.ExecuteNonQuery();
+
+            CloseConnection();
+
+            return noRows;
+            
         }
     }
 }
