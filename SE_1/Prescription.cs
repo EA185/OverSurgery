@@ -12,21 +12,25 @@ namespace SE_1
 {
     public partial class Prescription : Form
     {
+        public Variables variables = new Variables();
         public Prescription()
         {
             InitializeComponent();
         }
 
-        private void btn_back_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Menu page = new Menu();
-            page.ShowDialog();
-        }
+            {
+                variables.PatientID = txtPatient.Text;
+                variables.Diagnosis = txtDiagnosis.Text;
+                variables.MedicineName= txtMedName.Text;
+                variables.MedicineQuantity = txtMedQuantity.Text;
+                variables.MedicalDescription = txtMedDes.Text;
 
-        private void btn_exit_Click(object sender, EventArgs e)
-        {
-            this.Close();
+                DBConnection.GetDBConnectionInstance().InsertPrescription(variables);
+
+            }
+
         }
     }
 }
