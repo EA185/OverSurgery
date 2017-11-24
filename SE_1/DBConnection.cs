@@ -19,8 +19,7 @@ namespace SE_1
         private SqlConnection connectionToDB;
 
         private SqlDataAdapter dataAdapter;
-
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\EA\Desktop\OverSurgery\SE_1\Creds.mdf;Integrated Security=True;Connect Timeout=30");
+        
 
         public static string ConnectionStr
         {
@@ -103,6 +102,25 @@ namespace SE_1
 
             return noRows;
             
+        }
+        public int InsertPrescription(Variables Var)
+        {
+            OpenConnection();
+
+            SqlCommand cmd = new SqlCommand();
+
+            cmd.CommandType = CommandType.Text;
+
+            cmd.CommandText = "INSERT INTO prescription VALUES ('" + Var.Patient_ID + "','" + Var.Diagnosis + "','" + Var.Medicine_Name + "','" + Var.Medicine_Quantity + "','" + Var.Medical_Description + "')";
+
+            cmd.Connection = connectionToDB;
+
+            int noRows = cmd.ExecuteNonQuery();
+
+            CloseConnection();
+
+            return noRows;
+
         }
     }
 }

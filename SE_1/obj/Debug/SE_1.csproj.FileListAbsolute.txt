@@ -32,3 +32,22 @@ C:\Users\EA\Desktop\OverSurgery\SE_1\obj\Debug\SE_1.csproj.GenerateResource.Cach
 C:\Users\EA\Desktop\OverSurgery\SE_1\obj\Debug\SE_1.csproj.CoreCompileInputs.cache
 C:\Users\EA\Desktop\OverSurgery\SE_1\obj\Debug\SE_1.exe
 C:\Users\EA\Desktop\OverSurgery\SE_1\obj\Debug\SE_1.pdb
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\obj\Debug\SE_1.csprojResolveAssemblyReference.cache
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\obj\Debug\SE_1.Booking.resources
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\obj\Debug\SE_1.CheckEmployee.resources
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\obj\Debug\SE_1.FindPatient.resources
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\obj\Debug\SE_1.Login.resources
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\obj\Debug\SE_1.Menu.resources
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\obj\Debug\SE_1.Prescription.resources
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\obj\Debug\SE_1.Properties.Resources.resources
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\obj\Debug\SE_1.Registration.resources
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\obj\Debug\SE_1.Result.resources
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\obj\Debug\SE_1.csproj.GenerateResource.Cache
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\obj\Debug\SE_1.csproj.CoreCompileInputs.cache
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\obj\Debug\SE_1.exe
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\obj\Debug\SE_1.pdb
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\bin\Debug\Creds.mdf
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\bin\Debug\Creds_log.ldf
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\bin\Debug\SE_1.exe.config
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\bin\Debug\SE_1.exe
+C:\Users\Ellen Maheta\Source\Repos\OverSurgery\SE_1\bin\Debug\SE_1.pdb

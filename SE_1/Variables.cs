@@ -27,9 +27,17 @@ namespace SE_1
 
         //Find A Patient Variables
         // public string PatientID { get; set; }
-        
+
         public string PatientFirstNameSearch { get; set; }
         public string PatientAddress { get; set; }
-        
+
+    
+
+    //Prescription Variables
+    public string Patient_ID { get; set; }
+    public string Diagnosis { get; set; }
+    public string Medicine_Name { get; set; }
+    public string Medicine_Quantity { get; set; }
+    public string Medical_Description { get; set; }
     }
 }
