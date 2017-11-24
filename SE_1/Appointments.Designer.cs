@@ -150,7 +150,7 @@
             // 
             this.txt_AppGpNa.Location = new System.Drawing.Point(289, 262);
             this.txt_AppGpNa.Name = "txt_AppGpNa";
-            this.txt_AppGpNa.Size = new System.Drawing.Size(313, 31);
+            this.txt_AppGpNa.Size = new System.Drawing.Size(355, 31);
             this.txt_AppGpNa.TabIndex = 14;
             // 
             // Appointments
