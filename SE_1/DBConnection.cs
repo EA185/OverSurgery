@@ -123,15 +123,15 @@ namespace SE_1
         {
             OpenConnection();
 
-            SqlCommand cmd = new SqlCommand();
+            SqlCommand cd = new SqlCommand();
 
-            cmd.CommandType = CommandType.Text;
+            cd.CommandType = CommandType.Text;
 
-            cmd.CommandText = "INSERT INTO Appointment VALUES ('" + var.Patient_ID + "','" + var.FirstName + "','" + var.AppDate + "','" + var.GPName + "')";
+            cd.CommandText = "INSERT INTO Appointment VALUES ('" + var.Patient_ID + "','" + var.FirstName + "','" + var.AppDate + "','" + var.GPName + "')";
 
-            cmd.Connection = connectionToDB;
+            cd.Connection = connectionToDB;
 
-            int noRows = cmd.ExecuteNonQuery();
+            int noRows = cd.ExecuteNonQuery();
 
             CloseConnection();
 
