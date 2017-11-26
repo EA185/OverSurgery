@@ -34,6 +34,19 @@ namespace SE_1
             {
                 MessageBox.Show("Error!");
             }
+
+            DataSet appDGV = DBConnection.GetDBConnectionInstance().GetDataSet("SELECT FirstName'" + txt_AppPN.Text + "' and date='" + dtp_App.Value + "'");
+
+            DataTable dataTable = appDGV.Tables[0];
+
+            dgv_Appointment.DataSource = dataTable;
+        }
+
+        private void btn_CancelB_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu page = new Menu();
+            page.ShowDialog();
         }
     }
 }
