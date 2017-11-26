@@ -12,9 +12,28 @@ namespace SE_1
 {
     public partial class Appointments : Form
     {
+        public Variables var = new Variables();
+
         public Appointments()
         {
             InitializeComponent();
+        }
+
+        private void btn_Book_Click(object sender, EventArgs e)
+        {
+            var.Patient_ID = txt_AppPID.Text;
+            var.FirstName = txt_AppPN.Text;
+            var.AppDate = dtp_App.Text;
+            var.GPName = txt_AppGpNa.Text;
+
+            if (DBConnection.GetDBConnectionInstance().Insert(var) > 0)
+            {
+                MessageBox.Show("The Data Has Been Recorded Successfully!");
+            }
+            else
+            {
+                MessageBox.Show("Error!");
+            }
         }
     }
 }

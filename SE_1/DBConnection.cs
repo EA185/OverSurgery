@@ -44,10 +44,6 @@ namespace SE_1
             connectionToDB.Open();
         }
 
-        public void CloseConnection()
-        {
-            connectionToDB.Close();
-        }
 
         public DataSet GetDataSet(string sqlStatement)
         {
@@ -121,6 +117,32 @@ namespace SE_1
 
             return noRows;
 
+        }
+
+        public int Appointment(Variables var)
+        {
+            OpenConnection();
+
+            SqlCommand cmd = new SqlCommand();
+
+            cmd.CommandType = CommandType.Text;
+
+            cmd.CommandText = "INSERT INTO Appointment VALUES ('" + var.Patient_ID + "','" + var.FirstName + "','" + var.AppDate + "','" + var.GPName + "')";
+
+            cmd.Connection = connectionToDB;
+
+            int noRows = cmd.ExecuteNonQuery();
+
+            CloseConnection();
+
+            return noRows;
+
+        }
+
+
+        public void CloseConnection()
+        {
+            connectionToDB.Close();
         }
     }
 }

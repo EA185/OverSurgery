@@ -47,117 +47,131 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(63, 84);
+            this.label1.Location = new System.Drawing.Point(42, 50);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 25);
+            this.label1.Size = new System.Drawing.Size(69, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Patient ID:";
             // 
             // dgv_Appointment
             // 
             this.dgv_Appointment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Appointment.Location = new System.Drawing.Point(32, 328);
+            this.dgv_Appointment.Location = new System.Drawing.Point(21, 197);
+            this.dgv_Appointment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_Appointment.Name = "dgv_Appointment";
             this.dgv_Appointment.RowTemplate.Height = 33;
-            this.dgv_Appointment.Size = new System.Drawing.Size(1283, 322);
+            this.dgv_Appointment.Size = new System.Drawing.Size(855, 193);
             this.dgv_Appointment.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(63, 199);
+            this.label2.Location = new System.Drawing.Point(42, 119);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(189, 25);
+            this.label2.Size = new System.Drawing.Size(115, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Appointment Date:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(63, 262);
+            this.label3.Location = new System.Drawing.Point(42, 157);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 25);
+            this.label3.Size = new System.Drawing.Size(66, 15);
             this.label3.TabIndex = 3;
             this.label3.Text = "GP Name:";
             // 
             // txt_AppPID
             // 
-            this.txt_AppPID.Location = new System.Drawing.Point(289, 78);
+            this.txt_AppPID.Location = new System.Drawing.Point(193, 47);
+            this.txt_AppPID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_AppPID.Name = "txt_AppPID";
-            this.txt_AppPID.Size = new System.Drawing.Size(313, 31);
+            this.txt_AppPID.Size = new System.Drawing.Size(210, 25);
             this.txt_AppPID.TabIndex = 5;
             // 
             // txt_AppPN
             // 
-            this.txt_AppPN.Location = new System.Drawing.Point(289, 136);
+            this.txt_AppPN.Location = new System.Drawing.Point(193, 82);
+            this.txt_AppPN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_AppPN.Name = "txt_AppPN";
-            this.txt_AppPN.Size = new System.Drawing.Size(313, 31);
+            this.txt_AppPN.Size = new System.Drawing.Size(210, 25);
             this.txt_AppPN.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(63, 142);
+            this.label4.Location = new System.Drawing.Point(42, 85);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 25);
+            this.label4.Size = new System.Drawing.Size(87, 15);
             this.label4.TabIndex = 8;
             this.label4.Text = "Patient Name:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(63, 112);
+            this.label5.Location = new System.Drawing.Point(42, 67);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 25);
+            this.label5.Size = new System.Drawing.Size(26, 15);
             this.label5.TabIndex = 9;
             this.label5.Text = "OR";
             // 
             // btn_Book
             // 
-            this.btn_Book.Location = new System.Drawing.Point(752, 209);
+            this.btn_Book.Location = new System.Drawing.Point(501, 125);
+            this.btn_Book.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Book.Name = "btn_Book";
-            this.btn_Book.Size = new System.Drawing.Size(132, 57);
+            this.btn_Book.Size = new System.Drawing.Size(88, 34);
             this.btn_Book.TabIndex = 10;
             this.btn_Book.Text = "Book";
             this.btn_Book.UseVisualStyleBackColor = true;
+            this.btn_Book.Click += new System.EventHandler(this.btn_Book_Click);
             // 
             // dtp_App
             // 
-            this.dtp_App.Location = new System.Drawing.Point(289, 199);
+            this.dtp_App.Location = new System.Drawing.Point(193, 119);
+            this.dtp_App.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtp_App.Name = "dtp_App";
-            this.dtp_App.Size = new System.Drawing.Size(321, 31);
+            this.dtp_App.Size = new System.Drawing.Size(215, 25);
             this.dtp_App.TabIndex = 11;
             // 
             // btn_CancelB
             // 
-            this.btn_CancelB.Location = new System.Drawing.Point(930, 209);
+            this.btn_CancelB.Location = new System.Drawing.Point(620, 125);
+            this.btn_CancelB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_CancelB.Name = "btn_CancelB";
-            this.btn_CancelB.Size = new System.Drawing.Size(132, 57);
+            this.btn_CancelB.Size = new System.Drawing.Size(88, 34);
             this.btn_CancelB.TabIndex = 12;
             this.btn_CancelB.Text = "Cancel";
             this.btn_CancelB.UseVisualStyleBackColor = true;
             // 
             // btn_ChangeAP
             // 
-            this.btn_ChangeAP.Location = new System.Drawing.Point(1097, 209);
+            this.btn_ChangeAP.Location = new System.Drawing.Point(731, 125);
+            this.btn_ChangeAP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_ChangeAP.Name = "btn_ChangeAP";
-            this.btn_ChangeAP.Size = new System.Drawing.Size(132, 57);
+            this.btn_ChangeAP.Size = new System.Drawing.Size(88, 34);
             this.btn_ChangeAP.TabIndex = 13;
             this.btn_ChangeAP.Text = "Change";
             this.btn_ChangeAP.UseVisualStyleBackColor = true;
             // 
             // txt_AppGpNa
             // 
-            this.txt_AppGpNa.Location = new System.Drawing.Point(289, 262);
+            this.txt_AppGpNa.Location = new System.Drawing.Point(193, 157);
+            this.txt_AppGpNa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_AppGpNa.Name = "txt_AppGpNa";
-            this.txt_AppGpNa.Size = new System.Drawing.Size(355, 31);
+            this.txt_AppGpNa.Size = new System.Drawing.Size(238, 25);
             this.txt_AppGpNa.TabIndex = 14;
             // 
             // Appointments
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1366, 702);
+            this.ClientSize = new System.Drawing.Size(911, 421);
             this.Controls.Add(this.txt_AppGpNa);
             this.Controls.Add(this.btn_ChangeAP);
             this.Controls.Add(this.btn_CancelB);
@@ -171,6 +185,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgv_Appointment);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Appointments";
             this.Text = "Appointments";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Appointment)).EndInit();

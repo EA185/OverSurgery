@@ -31,10 +31,13 @@ namespace SE_1
         public string PatientFirstNameSearch { get; set; }
         public string PatientAddress { get; set; }
 
-    
+        //Appointment
+        public string AppDate { get; set; }
+        public string GPName { get; set; }
 
-    //Prescription Variables
-    public string Patient_ID { get; set; }
+
+        //Prescription Variables
+        public string Patient_ID { get; set; }
     public string Diagnosis { get; set; }
     public string Medicine_Name { get; set; }
     public string Medicine_Quantity { get; set; }
