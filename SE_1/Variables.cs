@@ -32,7 +32,7 @@ namespace SE_1
         public string PatientAddress { get; set; }
 
         //Appointment
-        public string AppDate { get; set; }
+        public DateTime AppDate { get; set; }
         public string GPName { get; set; }
 
 

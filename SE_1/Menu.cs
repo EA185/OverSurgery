@@ -51,7 +51,7 @@ namespace SE_1
         private void btnBook_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Booking page = new Booking();
+            Appointments page = new Appointments();
             page.ShowDialog();
         }
 

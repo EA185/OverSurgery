@@ -23,12 +23,12 @@ namespace SE_1
         {
             var.Patient_ID = txt_AppPID.Text;
             var.FirstName = txt_AppPN.Text;
-            var.AppDate = dtp_App.Text;
+            var.AppDate = dtp_App.MaxDate;
             var.GPName = txt_AppGpNa.Text;
 
-            if (DBConnection.GetDBConnectionInstance().Insert(var) > 0)
+            if (DBConnection.GetDBConnectionInstance().Appointment(var) > 0)
             {
-                MessageBox.Show("The Data Has Been Recorded Successfully!");
+                MessageBox.Show("Successful!");
             }
             else
             {

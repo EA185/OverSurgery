@@ -22,7 +22,7 @@ namespace SE_1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            variables.Username = txt_username.Text;
+            /*variables.Username = txt_username.Text;
             variables.Password = txt_password.Text;
 
             if (DBConnection.CheckLogin(variables) == true)
@@ -35,7 +35,11 @@ namespace SE_1
             else
             {
                 MessageBox.Show("Wrong username or password!");
-            }
+            }*/
+
+            this.Hide();
+            Menu page = new Menu();
+            page.ShowDialog();
 
         }
 
