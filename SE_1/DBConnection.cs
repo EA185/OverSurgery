@@ -122,21 +122,15 @@ namespace SE_1
         public int Appointment(Variables var)
         {
             OpenConnection();
-
             SqlCommand cd = new SqlCommand();
-
             cd.CommandType = CommandType.Text;
-
+            cd.CommandText = "set identity_insert Appointment on";
             cd.CommandText = "INSERT INTO Appointment VALUES ('" + var.Patient_ID + "','" + var.FirstName + "','" + var.AppDate + "','" + var.GPName + "')";
-
+            cd.CommandText = "set identity_insert Appointment off";
             cd.Connection = connectionToDB;
-
             int noRows = cd.ExecuteNonQuery();
-
             CloseConnection();
-
             return noRows;
-
         }
 
 
