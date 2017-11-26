@@ -23,7 +23,7 @@ namespace SE_1
         {
             var.Patient_ID = txt_AppPID.Text;
             var.FirstName = txt_AppPN.Text;
-            var.AppDate = dtp_App.MaxDate;
+            var.AppDate = dtp_App.Value;
             var.GPName = txt_AppGpNa.Text;
 
             if (DBConnection.GetDBConnectionInstance().Appointment(var) > 0)
@@ -46,6 +46,13 @@ namespace SE_1
         {
             this.Hide();
             Menu page = new Menu();
+            page.ShowDialog();
+        }
+
+        private void btn_ChangeAP_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Booking page = new Booking();
             page.ShowDialog();
         }
     }

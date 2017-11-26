@@ -159,6 +159,7 @@
             this.btn_ChangeAP.TabIndex = 13;
             this.btn_ChangeAP.Text = "Change";
             this.btn_ChangeAP.UseVisualStyleBackColor = true;
+            this.btn_ChangeAP.Click += new System.EventHandler(this.btn_ChangeAP_Click);
             // 
             // txt_AppGpNa
             // 
