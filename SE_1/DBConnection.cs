@@ -125,10 +125,10 @@ namespace SE_1
             OpenConnection();
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "set identity_insert Appointment on";
+            
             String AppDateStr = var.AppDate.ToString("yyyyMMdd");
-            cmd.CommandText = "INSERT INTO Appointment VALUES ('" + var.Patient_ID + "',' = " + var.FirstName + " ','" + AppDateStr + "','" + var.GPName + "')";
-            cmd.CommandText = "set identity_insert Appointment off";
+            cmd.CommandText = "INSERT INTO Appointment VALUES ('" + var.Patient_ID + "','" + var.FirstName + "','" + AppDateStr + "','" + var.GPName + "')";
+            
             cmd.Connection = connectionToDB;
             int noRows = cmd.ExecuteNonQuery();
             CloseConnection();
