@@ -88,7 +88,8 @@ namespace SE_1
 
             cmd.CommandType = CommandType.Text;
 
-            cmd.CommandText = "INSERT INTO patient VALUES ('" + Var.FirstName + "','" + Var.LastName + "','" + Var.Address1 + "','" + Var.Address2 + "','" + Var.PhoneNumber + "','" + Var.gender + "','" + Var.dob + "')";
+            String dobStr = Var.dob.ToString("yyyyMMdd");
+            cmd.CommandText = "INSERT INTO patient VALUES ('" + Var.FirstName + "','" + Var.LastName + "','" + Var.Address1 + "','" + Var.Address2 + "','" + Var.PhoneNumber + "','" + Var.gender + "','" + dobStr + "')";
             
             cmd.Connection = connectionToDB;
 
@@ -122,13 +123,14 @@ namespace SE_1
         public int Appointment(Variables var)
         {
             OpenConnection();
-            SqlCommand cd = new SqlCommand();
-            cd.CommandType = CommandType.Text;
-            cd.CommandText = "set identity_insert Appointment on";
-            cd.CommandText = "INSERT INTO Appointment VALUES ('" + var.Patient_ID + "','" + var.FirstName + "','" + var.AppDate + "','" + var.GPName + "')";
-            cd.CommandText = "set identity_insert Appointment off";
-            cd.Connection = connectionToDB;
-            int noRows = cd.ExecuteNonQuery();
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "set identity_insert Appointment on";
+            String AppDateStr = var.AppDate.ToString("yyyyMMdd");
+            cmd.CommandText = "INSERT INTO Appointment VALUES ('" + var.Patient_ID + "',' = " + var.FirstName + " ','" + AppDateStr + "','" + var.GPName + "')";
+            cmd.CommandText = "set identity_insert Appointment off";
+            cmd.Connection = connectionToDB;
+            int noRows = cmd.ExecuteNonQuery();
             CloseConnection();
             return noRows;
         }
