@@ -51,9 +51,7 @@ namespace SE_1
 
         private void btn_ChangeAP_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Booking page = new Booking();
-            page.ShowDialog();
+            
         }
     }
 }

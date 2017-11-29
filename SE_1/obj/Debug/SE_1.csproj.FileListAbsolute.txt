@@ -19,7 +19,6 @@ C:\Users\EA\Desktop\OverSurgery\SE_1\bin\Debug\SE_1.exe.config
 C:\Users\EA\Desktop\OverSurgery\SE_1\bin\Debug\SE_1.exe
 C:\Users\EA\Desktop\OverSurgery\SE_1\bin\Debug\SE_1.pdb
 C:\Users\EA\Desktop\OverSurgery\SE_1\obj\Debug\SE_1.csprojResolveAssemblyReference.cache
-C:\Users\EA\Desktop\OverSurgery\SE_1\obj\Debug\SE_1.Booking.resources
 C:\Users\EA\Desktop\OverSurgery\SE_1\obj\Debug\SE_1.CheckEmployee.resources
 C:\Users\EA\Desktop\OverSurgery\SE_1\obj\Debug\SE_1.FindPatient.resources
 C:\Users\EA\Desktop\OverSurgery\SE_1\obj\Debug\SE_1.Login.resources
@@ -70,3 +69,4 @@ C:\Users\Admin\Source\Repos\OverSurgery2\SE_1\obj\Debug\SE_1.Result.resources
 C:\Users\Admin\Source\Repos\OverSurgery2\SE_1\obj\Debug\SE_1.csproj.GenerateResource.Cache
 C:\Users\Admin\Source\Repos\OverSurgery2\SE_1\obj\Debug\SE_1.exe
 C:\Users\Admin\Source\Repos\OverSurgery2\SE_1\obj\Debug\SE_1.pdb
+C:\Users\EA\Desktop\OverSurgery\SE_1\obj\Debug\SE_1.Appointments.resources
