@@ -15,11 +15,11 @@ Things done:
 4- Check GP or nurse availabilty / Check GP and nurse on duty
 5- The UI for Prescription
 6- The UI for booking an appointment
+7- The UI for (Check GP and nurse)
+8- Extend Prescription
+9- The UI for Print result
+10- Print Result
 
-Things need to be done:
-1- Book an appointment
-2- Print Result
-3- Extend Prescription
-4- The UI for (Check GP and nurse)
-5- The UI for Print result
+Semi-Done:
+1- Book/change/cancel an appointment
 
