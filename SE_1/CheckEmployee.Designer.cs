@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckEmployee));
             this.dtp_ChkALL = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -115,7 +116,7 @@
             this.btn_back.FlatAppearance.BorderSize = 0;
             this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_back.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_back.Image = global::SE_1.Properties.Resources.turn_right;
+            this.btn_back.Image = ((System.Drawing.Image)(resources.GetObject("btn_back.Image")));
             this.btn_back.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_back.Location = new System.Drawing.Point(833, 491);
             this.btn_back.Name = "btn_back";
@@ -132,7 +133,7 @@
             this.btn_exit.FlatAppearance.BorderSize = 0;
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_exit.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_exit.Image = global::SE_1.Properties.Resources.login__2_;
+            this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
             this.btn_exit.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_exit.Location = new System.Drawing.Point(1092, 491);
             this.btn_exit.Name = "btn_exit";
@@ -246,7 +247,7 @@
             this.btn_Checkduty.FlatAppearance.BorderSize = 0;
             this.btn_Checkduty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Checkduty.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Checkduty.Image = global::SE_1.Properties.Resources.search;
+            this.btn_Checkduty.Image = ((System.Drawing.Image)(resources.GetObject("btn_Checkduty.Image")));
             this.btn_Checkduty.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Checkduty.Location = new System.Drawing.Point(548, 487);
             this.btn_Checkduty.Name = "btn_Checkduty";
@@ -262,7 +263,7 @@
             this.btn_CheckGPav.FlatAppearance.BorderSize = 0;
             this.btn_CheckGPav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CheckGPav.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_CheckGPav.Image = global::SE_1.Properties.Resources.search;
+            this.btn_CheckGPav.Image = ((System.Drawing.Image)(resources.GetObject("btn_CheckGPav.Image")));
             this.btn_CheckGPav.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_CheckGPav.Location = new System.Drawing.Point(548, 128);
             this.btn_CheckGPav.Name = "btn_CheckGPav";
@@ -278,7 +279,7 @@
             this.btn_CheckNurseAv.FlatAppearance.BorderSize = 0;
             this.btn_CheckNurseAv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CheckNurseAv.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_CheckNurseAv.Image = global::SE_1.Properties.Resources.search;
+            this.btn_CheckNurseAv.Image = ((System.Drawing.Image)(resources.GetObject("btn_CheckNurseAv.Image")));
             this.btn_CheckNurseAv.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_CheckNurseAv.Location = new System.Drawing.Point(907, 128);
             this.btn_CheckNurseAv.Name = "btn_CheckNurseAv";

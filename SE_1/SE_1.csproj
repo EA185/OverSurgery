@@ -138,6 +138,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
@@ -166,6 +167,17 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Creds.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\avatar.png" />
+    <None Include="Resources\glasses.png" />
+    <None Include="Resources\magnifying-glass.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\id-card.png" />
+    <None Include="Resources\login.png" />
+    <None Include="Resources\login %282%29.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\turn-right.png" />
+    <None Include="Resources\search.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">

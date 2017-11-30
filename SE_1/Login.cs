@@ -41,7 +41,7 @@ namespace SE_1
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }

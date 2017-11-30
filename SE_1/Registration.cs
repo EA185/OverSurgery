@@ -53,7 +53,7 @@ namespace SE_1
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btn_back_Click(object sender, EventArgs e)
