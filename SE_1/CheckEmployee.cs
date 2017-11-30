@@ -67,7 +67,7 @@ namespace SE_1
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }
