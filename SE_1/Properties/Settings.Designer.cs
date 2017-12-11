@@ -26,8 +26,8 @@ namespace SE_1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\EA\\Desktop\\OverSurge" +
-            "ry\\SE_1\\Creds.mdf;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Ellen Maheta\\Source" +
+            "\\Repos\\OverSurgery\\SE_1\\Creds.mdf\";Integrated Security=True")]
         public string ConnectionStr {
             get {
                 return ((string)(this["ConnectionStr"]));

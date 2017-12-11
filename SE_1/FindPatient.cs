@@ -51,5 +51,10 @@ namespace SE_1
         {
             this.Close();
         }
+
+        private void FindPatient_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

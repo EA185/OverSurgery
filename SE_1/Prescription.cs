@@ -50,5 +50,15 @@ namespace SE_1
         {
             this.Close();
         }
+
+        private void btnShow_Click_1(object sender, EventArgs e)
+        {
+             DataSet dsFind = DBConnection.GetDBConnectionInstance().GetDataSet("SELECT * FROM prescription WHERE Patient_ID='" + txtPatient.Text + "' OR Diagnosis= '" + txtDiagnosis.Text + "'" );
+
+                DataTable dataTable = dsFind.Tables[0];
+
+                dgvPrescription.DataSource = dataTable;
+
+        }
     }
     }

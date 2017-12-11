@@ -41,6 +41,9 @@
             this.txtDiagnosis = new System.Windows.Forms.TextBox();
             this.txtMedName = new System.Windows.Forms.TextBox();
             this.txtMedQuantity = new System.Windows.Forms.TextBox();
+            this.dgvPrescription = new System.Windows.Forms.DataGridView();
+            this.btnShow = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPrescription)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -154,11 +157,31 @@
             this.txtMedQuantity.Size = new System.Drawing.Size(138, 20);
             this.txtMedQuantity.TabIndex = 12;
             // 
+            // dgvPrescription
+            // 
+            this.dgvPrescription.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPrescription.Location = new System.Drawing.Point(359, 37);
+            this.dgvPrescription.Name = "dgvPrescription";
+            this.dgvPrescription.Size = new System.Drawing.Size(312, 150);
+            this.dgvPrescription.TabIndex = 13;
+            // 
+            // btnShow
+            // 
+            this.btnShow.Location = new System.Drawing.Point(181, 297);
+            this.btnShow.Name = "btnShow";
+            this.btnShow.Size = new System.Drawing.Size(75, 23);
+            this.btnShow.TabIndex = 14;
+            this.btnShow.Text = "Show";
+            this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click_1);
+            // 
             // Prescription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(467, 332);
+            this.ClientSize = new System.Drawing.Size(683, 332);
+            this.Controls.Add(this.btnShow);
+            this.Controls.Add(this.dgvPrescription);
             this.Controls.Add(this.txtMedQuantity);
             this.Controls.Add(this.txtMedName);
             this.Controls.Add(this.txtDiagnosis);
@@ -174,6 +197,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Prescription";
             this.Text = "Prescription";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPrescription)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,5 +218,7 @@
         private System.Windows.Forms.TextBox txtDiagnosis;
         private System.Windows.Forms.TextBox txtMedName;
         private System.Windows.Forms.TextBox txtMedQuantity;
+        private System.Windows.Forms.DataGridView dgvPrescription;
+        private System.Windows.Forms.Button btnShow;
     }
 }
